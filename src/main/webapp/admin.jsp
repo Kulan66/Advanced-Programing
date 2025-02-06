@@ -1,28 +1,19 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: kulan
-  Date: 2/2/2025
-  Time: 10:29 AM
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Admin Dashboard</title>
+  <meta charset="UTF-8">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" type="text/css" href="/css/styles.css">
 </head>
 <body>
-<h1>Admin Dashboard</h1>
-<p>Welcome, Admin!</p>
+<h1>Welcome, Admin</h1>
 <ul>
-    <li><a href="manageCars.jsp">Manage Cars</a></li>
-    <li><a href="manageDrivers.jsp">Manage Drivers</a></li>
-    <li><a href="manageBookings.jsp">Manage Bookings</a></li>
-    <li><a href="manageCustomers.jsp">Manage Customers</a></li>
+  <li><a href="jsp/admin/managecar.jsp">Manage Cars</a></li>
+  <li><a href="jsp/admin/managebooking.jsp">Manage Bookings</a></li>
+  <li><a href="jsp/admin/managecustomer.jsp">Manage Customers</a></li>
+  <li><a href="jsp/admin/managedriver.jsp">Manage Drivers</a></li>
+  <li><a href="jsp/admin/helpmanage.jsp">Manage Help Guidelines</a></li>
 </ul>
-<form action="admin" method="post">
-    <input type="hidden" name="action" value="logout">
-    <input type="submit" value="Logout">
-</form>
 </body>
 </html>
